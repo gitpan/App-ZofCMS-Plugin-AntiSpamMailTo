@@ -1,0 +1,48 @@
+App-ZofCMS-Plugin-AntiSpamMailTo
+
+The module is an L<App::ZofCMS> plugin which provides means to deploy a technique that many
+claim to be effective in protecting your C<< <a href="mailto:foo@bar.com"></a> >> links
+from dumb spam bots.
+
+The technique is quite simple (and simple to circumvent, but we are talking about B<dumb>
+spam bots) - the entire contents of C<href=""> attribute are encoded as HTML entities. Dumb
+spam bots miss the C<mailto:> and go their way. Anyway, on to the business.
+
+INSTALLATION
+
+To install this module, run the following commands:
+
+	perl Build.PL
+	./Build
+	./Build test
+	./Build install
+
+SUPPORT AND DOCUMENTATION
+
+After installing, you can find documentation for this module with the
+perldoc command.
+
+    perldoc App::ZofCMS::Plugin::AntiSpamMailTo
+
+You can also look for information at:
+
+    RT, CPAN's request tracker
+        http://rt.cpan.org/NoAuth/Bugs.html?Dist=App-ZofCMS-Plugin-AntiSpamMailTo
+
+    AnnoCPAN, Annotated CPAN documentation
+        http://annocpan.org/dist/App-ZofCMS-Plugin-AntiSpamMailTo
+
+    CPAN Ratings
+        http://cpanratings.perl.org/d/App-ZofCMS-Plugin-AntiSpamMailTo
+
+    Search CPAN
+        http://search.cpan.org/dist/App-ZofCMS-Plugin-AntiSpamMailTo
+
+
+COPYRIGHT AND LICENCE
+
+Copyright (C) 2008 'Zoffix
+
+This program is free software; you can redistribute it and/or modify it
+under the same terms as Perl itself.
+
