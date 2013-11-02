@@ -3,7 +3,7 @@ package App::ZofCMS::Plugin::AntiSpamMailTo;
 use warnings;
 use strict;
 
-our $VERSION = '0.0101';
+our $VERSION = '0.0102';
 
 use HTML::Entities;
 
@@ -60,6 +60,8 @@ sub process {
 1;
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
 App::ZofCMS::Plugin::AntiSpamMailTo - "smart" HTML escapes to protect mailto:foo@bar.com links from not-so-smart spam bots
@@ -91,13 +93,20 @@ In your L<HTML::Template> template:
 
 =head1 DESCRIPTION
 
-The module is an L<App::ZofCMS> plugin which provides means to deploy a technique that many
-claim to be effective in protecting your C<< <a href="mailto:foo@bar.com"></a> >> links
+The module is an L<App::ZofCMS> plugin which provides means to deploy a
+technique that many
+claim to be effective in protecting your
+C<< <a href="mailto:foo@bar.com"></a> >> links
 from dumb spam bots.
 
-The technique is quite simple (and simple to circumvent, but we are talking about B<dumb>
-spam bots) - the entire contents of C<href=""> attribute are encoded as HTML entities. Dumb
-spam bots miss the C<mailto:> and go their way. Anyway, on to the business.
+The technique is quite simple (and simple to circumvent, but we are
+talking about B<dumb>
+spam bots) - the entire contents of C<href=""> attribute are encoded
+as HTML entities. Dumb
+spam bots miss the C<mailto:> and go their way. As of the day of this
+writing, I have about 14 sites that have been using this plugin for
+3+ years and I might have received one spam email to the email address
+shown by the plugin. Anyway, on to the business.
 
 This documentation assumes you have read L<App::ZofCMS>,
 L<App::ZofCMS::Config> and L<App::ZofCMS::Template>

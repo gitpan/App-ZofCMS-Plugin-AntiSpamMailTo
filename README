@@ -1,12 +1,13 @@
 App-ZofCMS-Plugin-AntiSpamMailTo
 
-The module is an L<App::ZofCMS> plugin which provides means to deploy a technique that many
-claim to be effective in protecting your C<< <a href="mailto:foo@bar.com"></a> >> links
-from dumb spam bots.
+The module is an L<App::ZofCMS> plugin which provides means to deploy
+a technique that many claim to be effective in protecting your
+C<< <a href="mailto:foo@bar.com"></a> >> links from dumb spam bots.
 
-The technique is quite simple (and simple to circumvent, but we are talking about B<dumb>
-spam bots) - the entire contents of C<href=""> attribute are encoded as HTML entities. Dumb
-spam bots miss the C<mailto:> and go their way. Anyway, on to the business.
+The technique is quite simple (and simple to circumvent, but we are
+talking about B<dumb> spam bots) - the entire contents of C<href="">
+attribute are encoded as HTML entities. Dumb spam bots miss the
+C<mailto:> and go their way. Anyway, on to the business.
 
 INSTALLATION
 

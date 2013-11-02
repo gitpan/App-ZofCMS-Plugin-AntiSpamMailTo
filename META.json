@@ -1,0 +1,47 @@
+{
+   "abstract" : "\"smart\" HTML escapes to protect mailto:foo@bar.com links from not-so-smart spam bots",
+   "author" : [
+      "Zoffix <'zoffix@cpan.org'>"
+   ],
+   "dynamic_config" : 1,
+   "generated_by" : "Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "App-ZofCMS-Plugin-AntiSpamMailTo",
+   "prereqs" : {
+      "build" : {
+         "requires" : {
+            "Test::More" : "0"
+         }
+      },
+      "configure" : {
+         "requires" : {
+            "Module::Build" : "0"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "HTML::Entities" : "1.35",
+            "perl" : "5.006"
+         }
+      }
+   },
+   "provides" : {
+      "App::ZofCMS::Plugin::AntiSpamMailTo" : {
+         "file" : "lib/App/ZofCMS/Plugin/AntiSpamMailTo.pm",
+         "version" : "0.0102"
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "license" : [
+         "http://dev.perl.org/licenses/"
+      ]
+   },
+   "version" : "0.0102"
+}

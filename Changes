@@ -1,5 +1,8 @@
 Revision history for App-ZofCMS-Plugin-AntiSpamMailTo
 
-0.0101  October 14, 2008
-        First version, released on an unsuspecting world.
+0.0102  2013-11-01
+        - Minor fixes to comply with specs and Kwalitee game
+
+0.0101  2008-10-14
+        - First version, released on an unsuspecting world.
 
